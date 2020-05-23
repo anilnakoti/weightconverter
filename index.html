@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4 cdn css link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Weight converter</title>
+    <style>
+        body {
+            margin-top: 30px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-4">
+                    Neo Weight Converter
+                </h1>
+
+                <p class="alert alert-danger" id="errorMsg" style="display: none;">Please select weight from dropdown
+                </p>
+                <form>
+                    <select class="form-control" id="weightType">
+                        <option value="">Select a weight from this drop down</option>
+                        <option>tonnes</option>
+                        <option>Kilogram</option>
+                        <option>Gram</option>
+                        <option>Milligram</option>
+                        <option>Microgram</option>
+                        <option>Imperial ton</option>
+                        <option>US ton</option>
+                        <option>stone</option>
+                        <option>Pound</option>
+                        <option>Ounce</option>
+                    </select>
+                    <div class="form-group mt-2">
+                        <input type="number" class="form-control form-control-lg" id="userInput" value="1">
+                    </div>
+                </form>
+
+                <div id="output">
+                    <div class="card bg-primary mb-2">
+                        <div class="card-header">
+                            <h4 id="w1"></h4>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary mb-2">
+                        <div class="card-header">
+                            <h4 id="w2"></h4>
+                        </div>
+                    </div>
+                    <div class="card bg-success mb-2">
+                        <div class="card-header">
+                            <h4 id="w3"></h4>
+                        </div>
+                    </div>
+                    <div class="card bg-danger mb-2">
+                        <div class="card-header">
+                            <h4 id="w4"> </h4>
+                        </div>
+                    </div>
+                    <div class="card bg-warning mb-2">
+                        <div class="card-header">
+                            <h4 id="w5"></h4>
+                        </div>
+                    </div>
+                    <div class="card bg-info mb-2">
+                        <div class="card-header">
+                            <h4 id="w6"></h4>
+                        </div>
+                    </div>
+                    <div class="card bg-light mb-2" style="color: #333;">
+                        <div class="card-header">
+                            <h4 id="w7"></h4>
+                        </div>
+                    </div>
+                    <div class="card bg-dark mb-2">
+                        <div class=" card-header">
+                            <h4 id="w8"></h4>
+                        </div>
+                    </div>
+                    <div class="card bg-primary mb-2">
+                        <div class=" card-header">
+                            <h4 id="w9"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
